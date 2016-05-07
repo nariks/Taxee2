@@ -1,0 +1,15 @@
+<nav class="navbar navbar-light" style="background-color: #3F51B5">
+    <a class="navbar-brand" href="#"><strong>TaXeE</strong></a>
+      <div id="navbar">
+        <nav class="nav navbar-nav pull-xs-right t">
+          <a class="nav-item btn btn-info btn-sm navbar-btn" href="/">Home</a>
+          <a class="nav-item btn btn-info btn-sm navbar-btn" href="/contact">Help</a>
+          <% if logged_in? %>
+            <a class="nav-item btn btn-info btn-sm navbar-btn" href="/sessions/my_profile">My Profile</a>
+            <a class="nav-item btn btn-info btn-sm navbar-btn" href="/sessions/logout">Signout</a>
+          <% end %>
+        </nav>
+      </div>
+</nav>
+
+    
